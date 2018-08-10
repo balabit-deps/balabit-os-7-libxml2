@@ -1,3 +1,26 @@
+libxml2 (2.9.4+dfsg1-6.1ubuntu1.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: XXE attacks
+    - debian/patches/CVE-2016-9318.patch: fix in parser.c.
+    - CVE-2016-9318
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-18258.patch: fix in xzlib.c.
+    - CVE-2017-18258
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-14404.patch: fix in xpath.c.
+    - CVE-2018-14404
+  * SECURITY UPDATE: Infinite loop in LZMA decompression
+    - debian/patches/CVE-2018-14567.patch: fix in xzlib.c.
+    - CVE-2018-14567
+  * SECURITY UPDATE: Infinite recursion/Denial of service
+    - debian/patches/CVE-2017-16932.patch: fix in parser.c and
+      add some error check files result/errors/759579.xml,
+      result/errors/759579.xml.err, result/errors/759579.xml.str,
+      test/errors/759579.xml.
+    - CVE-2017-16932
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Fri, 10 Aug 2018 15:30:23 -0300
+
 libxml2 (2.9.4+dfsg1-6.1ubuntu1) bionic; urgency=low
 
   * Merge from Debian unstable.  Remaining changes:
