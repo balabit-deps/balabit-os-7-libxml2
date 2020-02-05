@@ -1,3 +1,17 @@
+libxml2 (2.9.4+dfsg1-6.1ubuntu1.3) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Memory leak
+    - debian/patches/CVE-2019-19956.patch: fix memory leak in
+      xmlParseBalancedChunkMemoryRecover checking if doc is NULL in parser.c.
+    - CVE-2019-19956
+  * SECURITY UPDATE: Denial of service though an infinite loop
+    - debian/patches/CVE-2020-7595.patch: fix infinite loop in
+      xmlStringLenDecodeEntities adding checks to ctxt->instate if
+      it is == XML_PARSER_EOF in parser.c.
+    - CVE-2020-7595
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 05 Feb 2020 14:08:34 -0300
+
 libxml2 (2.9.4+dfsg1-6.1ubuntu1.2) bionic-security; urgency=medium
 
   * SECURITY UPDATE: XXE attacks
