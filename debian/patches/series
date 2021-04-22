@@ -24,3 +24,10 @@ CVE-2018-14567.patch
 CVE-2017-16932.patch
 CVE-2019-19956.patch
 CVE-2020-7595.patch
+fix-error-handler-bug.patch
+CVE-2019-20388.patch
+CVE-2020-24977.patch
+CVE-2021-3516.patch
+CVE-2021-3517.patch
+CVE-2021-3518.patch
+CVE-2021-3537.patch
